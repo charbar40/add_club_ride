@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+
+      
+.inputStylng {
+   
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 250px; /* Set a consistent width */
+    margin-bottom: 5px; /* Add some vertical spacing */
+    margin-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1>OUCC</h1>
+    <form action="https://httpbin.org/get" method="get">
+
+        <input type="hidden" name="SessionIdentifier" value="ff53-dd45-dcba9876-9090">
+       
+        <p>
+        <label for="nameOfRide" class="labelStyling">Name of Ride: </label>
+        <input type="text" name="nameOfRide" id="nameOfRide" autocomplete="on" class="inputStylng form-group" placeholder="e.g. High Watcombe to Walton">
+        </p>
+       <!--  auto complete remembers previous information in the input fields -->
+       <p>
+        <label for="TypeOfRide" class="labelStyling">Type of Ride: </label>
+       <input type="text" name="TypeOfRide" id="TypeOfRide" autocomplete="on" class="inputStylng form-group" placeholder="e.g. Road,mountain bike,race">
+       </p>
+
+       <p>
+        <label for="DateOfRide" class="labelStyling">Date of Ride: </label>
+       <input type="date" name="DateOfRide" id="DateOfRide" autocomplete="on" class="inputStylng form-group" placeholder="e.g. 5/06/2024">
+       </p>
+       <p>
+        <label for="StartTime" class="labelStyling">Start Time: </label>
+       <input type="time" name="StartTime" id="StartTime" autocomplete="on" class="inputStylng form-group" placeholder="e.g. 10:00am">
+       </p>
+       <p>
+        <label for="Duration" class="labelStyling">Duration: </label>
+       <input type="text" name="Duration" id="Duration" autocomplete="on" class="inputStylng form-group" placeholder="e.g. 120 mins">
+       </p>
+       <p>
+        <label for="MeetingPoint" class="labelStyling">Meeting Point: </label>
+       <input type="text" name="MeetingPoint" id="MeetingPoint" autocomplete="on" class="inputStylng form-group" placeholder="e.g. Watcombe Fields Entrance A">
+       </p>
+       <p>
+        <label for="DistanceInKm" class="labelStyling">Distance in km: </label>
+       <input type="text" name="DistanceInKm" id="DistanceInKm" autocomplete="on" class="inputStylng form-group"placeholder="e.g. 22">
+       </p>
+       <p>
+        <label for="ElevationInM" class="labelStyling">Elevation in m: </label>
+       <input type="text" name="ElevationInM" id="ElevationInM" autocomplete="on" class="inputStylng form-group" placeholder="e.g. 200">
+       </p>
+       <p>
+        <label for="MaximumGroupSize" class="labelStyling">Maximum Group Size: </label>
+       <input type="number" name="MaximumGroupSize" id="MaximumGroupSize" autocomplete="on" class="inputStylng form-group" placeholder="e.g. 12">
+       </p>
+       <p>
+        <label for="NameOfLeader" class="labelStyling">Name of Leader: </label>
+       <input type="text" name="NameOfLeader" id="NameOfLeader" autocomplete="on" class="inputStylng form-group"placeholder="Helen Smith">
+       </p>
+       <p>
+        <label for="ContactNumber" class="labelStyling">Contact Number: </label>
+       <input type="tel" name="ContactNumber" id="ContactNumber" autocomplete="on" class="inputStylng form-group"placeholder="e.g. 07774075411">
+       </p>
+       <p>
+        <label for="AltContactNumber" class="labelStyling">Alternative Contact Number: </label>
+       <input type="tel" name="AltContactNumber" id="AltContactNumber" autocomplete="on" class="inputStylng form-group" placeholder="e.g. 07725076814">
+       </p>
+       <p>
+        <label for="Comments" class="labelStyling ">Comments: </label>
+       <textarea name="Comments" id="Comments" autocomplete="on" class="inputStylng" placeholder="e.g. flat ride, suitable for beginners and senior members"></textarea>
+       </p>
+        <p>Status
+        <input type="checkbox" name="status" id="rejected" value="rejected">
+        <label for="proposed">Rejected</label>
+        
+
+        
+        <input type="checkbox" name="status" id="proposed" value="proposed">
+        <label for="proposed">Proposed</label>
+        
+        
+        <input type="checkbox" name="status" id="approved" value="approved">
+        <label for="proposed">Approved</label>
+        </p>
+       <p>
+       <button type="submit">Submit</button>
+       </p>
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
